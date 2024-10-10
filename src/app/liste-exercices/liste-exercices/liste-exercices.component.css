@@ -1,0 +1,213 @@
+@media (max-width: 992px) {
+    .cercle {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .flex-container {
+      flex-direction: column; 
+      align-items: center; 
+      gap: 150px;
+    }
+  
+    .col-md-3 {
+      width: 100%; 
+      
+    }
+    .grille-exercices{
+        margin-top: 800px;
+    }
+  
+      
+  
+   
+  }
+.containerBody{
+    margin-left:1000px ;
+    margin-right: 1000px;
+    
+}
+
+.navbar{margin-top: 20px;}
+li a{font-size: 18px;
+    font-weight: bold;
+    color: #292C2D;
+    padding-right: 20px;
+text-decoration: none;}
+   
+   
+ li a:hover{
+    color: rgb(235, 178, 72);
+ }
+ .color{color: #FF902A;}
+ h1{font-weight: bold; 
+    margin-top: 100px;}
+.proverbe{
+    font-size: 20px;
+}
+.textProg{
+    margin-top: 120px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textProg2{
+    font-weight:700; 
+    margin-top: 120px;
+    text-decoration: none;
+}
+.cercle{
+    width: 300px;         
+    height: 300px;        
+    background-color: #FF902A;  
+    border-radius: 50%;
+    position: absolute;
+    top: 100px;
+    right: 150px;
+      
+  
+}
+.headerImage{
+    margin-left: 50px;
+}
+
+.image-container {
+    position: relative; 
+    width: 400px;
+    height: auto;
+}
+.image2Container{
+    position: relative; 
+}
+.para{margin-right: 200px;}
+.container{
+    margin-left: 100px;
+}
+.flex{
+    display:flex;
+    justify-content: space-between;
+}
+.list-prog-title{
+    position: absolute; top: 5px;
+}
+.divProgramme{
+   position: static; 
+    width: 100%;
+    height: 200px;
+     background-color:  rgb(90, 87, 87); 
+     border-radius: 20px;
+        
+}
+.center{text-align: center;
+margin-top: 10px;
+font-weight: bold;}
+.buttonStart{
+    border-radius: 5px;
+    border-color: #FF902A;
+    color: #FF902A;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid ;
+}
+.buttonDown{
+    background-color: #FF902A;
+    border-radius: 50%;
+    color: white;
+    border-style: hidden;
+    width: 30px;
+}
+.buttonDown2{
+    background-color: #FF902A;
+    border-radius: 50%;
+    color: white;
+    border-style: hidden;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.flex-container {
+    display: flex;                
+    gap: 40px;
+    margin-top: 10px;
+}
+.positionCard{
+    z-index: 1;
+}
+header{
+   
+    background-color: rgb(217, 212, 212); 
+height: 700px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+main{
+    margin-top: 120px;
+}
+
+.titre-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.titre-section h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.voir-plus a {
+    text-decoration: none;
+    color: #FF902A;
+    font-weight: bold;
+}
+.grille-exercices {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.carte-exercice {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    
+}
+.image-exercice {
+    width: 100%;
+    height: 200px;
+    background-color: #ddd;
+    object-fit: cover;
+}
+.texte-exercice {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.nom-exercice {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.muscles-cibles {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+.btn-detail {
+    background-color: #FF902A;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}

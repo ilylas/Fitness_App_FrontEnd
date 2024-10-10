@@ -1,0 +1,157 @@
+<body>
+  <header>
+    <div class="flex">
+      <div class="container">
+        <div>
+          <nav class="navbar navbar-expand-lg">
+            <a>
+              <img src="assets/logo.png" height="25" width="150" alt="image" />
+            </a>
+            <div class="collapse navbar-collapse justify-content-center">
+              <ul class="navbar-nav justify-content-center">
+                <li>
+                  <a href="#">My Profile</a>
+                </li>
+                <li>
+                  <a href="#">Our Programs</a>
+                </li>
+                <li>
+                    <a href="#">Exercices</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <div>
+            <h1>
+              Enjoy your <span class="color">workout</span> and stay motivated
+            </h1>
+            <p class="proverbe">
+              Boost your productivity and build your<br />
+              mood with a fitness program suited for you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-container">
+        <a>
+          <img src="assets/materielDroite.png" height="300" alt="image" />
+        </a>
+        <div class="cercle">
+          <img
+            src="assets/headerImage.png"
+            height="350"
+            alt="image"
+            class="headerImage"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="image2Container">
+      <a>
+        <img src="assets/materielGauche.png" height="300" alt="image" />
+      </a>
+
+      <div class="container list-prog-title">
+        <div class="titre-section">
+          <h2 class="textProg">Workout Programs For You</h2>
+          <a href="#" class="color textProg2"
+            >create your program <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <div class="flex-container justify-content-center">
+          <div class="col-md-3 positionCard">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img
+                  src="assets/photo1.png"
+                  height="200"
+                  style="width: 100%"
+                  alt="image"
+                />
+                <h6 class="card-title center">Moderate To Advanced</h6>
+                <div class="flex">
+                  <button class="buttonStart">Start</button>
+                  <button class="buttonDown">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 positionCard">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img
+                  src="assets/photo2.png"
+                  height="200"
+                  style="width: 100%"
+                  alt="image"
+                />
+                <h6 class="card-title center">strength Training</h6>
+                <div class="flex">
+                  <button class="buttonStart">Start</button>
+                  <button class="buttonDown">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 positionCard">
+            <div class="card mb-3">
+              <div class="card-body">
+                <img
+                  src="assets/photo3.png"
+                  height="200"
+                  style="width: 100%"
+                  alt="image"
+                />
+                <h6 class="card-title center">Beginner Friendly</h6>
+                <div class="flex">
+                  <button class="buttonStart">Start</button>
+                  <button class="buttonDown">
+                    <i class="fa-solid fa-arrow-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divProgramme container"></div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="titre-section">
+        <h2>Popular Exercises</h2>
+        <div class="voir-plus">
+          <a href="#">See more Exercises →</a>
+        </div>
+      </div>
+
+      <div *ngFor="let exercice of lesexercices" class="grille-exercices" >
+        <div class="carte-exercice" >
+          <img src={{exercice.image}} alt="Exercise 1" class="image-exercice" />
+          <div class="texte-exercice">
+            <div class="nom-exercice">{{exercice.name}}</div>
+        </div>
+
+        <div class="flex">
+            <div class="texte-exercice muscles-cibles">{{exercice.muscleGroup}}</div>
+            <button class="buttonDown2" onclick="">
+              <i class="fa-solid fa-arrow-down"><i class="fa-solid fa-arrow-right" style="color: #FFD43B;"></i></i>
+            </button>
+        </div>
+        </div>
+      </div>
+    
+    </div>
+  </main>
+</body>
